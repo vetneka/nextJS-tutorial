@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { range } from 'ramda';
+import styles from './Organization.module.css';
 
 const Organization = () => {
   const router = useRouter();
@@ -8,7 +9,7 @@ const Organization = () => {
 
   return (
     <>
-      <h1>Organization Page</h1>
+      <h1 className={styles.title}>Organization Page</h1>
 
       <ul>
         <li>
@@ -29,7 +30,7 @@ const Organization = () => {
         })}
       </ul>
     </>
-  )
+  );
 };
 
 export default Organization;
